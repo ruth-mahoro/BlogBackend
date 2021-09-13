@@ -2,8 +2,11 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const mongoose = require('mongoose');
 
+const cors = require('cors')
+app.use(cors());
+
 // set up express app
-const app = express();
+const app = express(); 
 
 // connect to mongodb
 mongoose.connect('mongodb://localhost/bloggo');
